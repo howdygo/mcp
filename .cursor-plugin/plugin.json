@@ -1,5 +1,4 @@
 {
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "howdygo",
   "version": "1.0.0",
   "description": "Find, set up, edit, publish, share and export interactive HowdyGo product demos from your AI assistant.",
@@ -16,5 +15,6 @@
     "product marketing"
   ],
   "repository": "https://github.com/howdygo/mcp",
-  "license": "MIT"
+  "license": "MIT",
+  "logo": "assets/icon.png"
 }
