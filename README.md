@@ -18,12 +18,12 @@ This repository describes the hosted server and holds its client configuration. 
 - **Rewrite for an audience:** rewrite the whole demo, or a single step, for sales, finance or a technical audience.
 - **Edit the recorded screens:** change text on the captured pages (brand names, figures, sample data), and hide or blur sensitive elements.
 - **Manage demos:** rename, duplicate, publish or unpublish a demo, and add, change or remove its viewer password.
-- **Share:** get a demo's share link (on your custom domain if you have one) or its website embed code, inline or as a pop-up, and play published demos inline in the conversation.
+- **Share:** get a demo's share link (on your custom domain if you have one) or its website embed code, inline or as a pop-up, and play published demos inline in the conversation, including other companies' demos shared publicly without a password.
 - **Export:** export a demo as a GIF, WebM or MP4 file.
 - **Analytics:** see how a guided demo performs, with its step-by-step funnel, or compare all your demos. Available on the Pro plan and up.
 - **Answer questions about HowdyGo** from its documentation.
 
-Your assistant can only reach the demos you can access, with your HowdyGo permissions. It asks before every change, and step edits save a version first, so changes can be restored from the demo's version history.
+Your assistant can only read and edit the demos you can access, with your HowdyGo permissions. Other demos it can only play, and only when they're shared publicly without a password. It asks before every change, and step edits save a version first, so changes can be restored from the demo's version history.
 
 ## Tools
 
@@ -47,7 +47,7 @@ Your assistant can only reach the demos you can access, with your HowdyGo permis
 | `suggestPassword` | Add, change or remove a demo's viewer password |
 | `suggestVoiceover` | Add AI voiceovers to steps, with a spoken script for each |
 | `getShareLink`, `getEmbedCode` | Get the share link, or the inline or pop-up embed code |
-| `showDemo` | Play a published demo inline in the conversation |
+| `showDemo` | Play a published demo inline in the conversation: one of yours, or any demo shared publicly without a password |
 | `exportDemo`, `getExport` | Export a demo as a GIF, WebM or MP4 file, and get its download link |
 | `getDemoAnalytics`, `getLibraryAnalytics` | Analytics for one guided demo, with its step funnel, or for all of them (Pro plan and up) |
 | `searchDocs`, `getDocsPage` | Answer questions from the HowdyGo docs |
