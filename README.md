@@ -2,7 +2,7 @@
 
 <img src="assets/icon.png" alt="HowdyGo" width="64" align="right" />
 
-[HowdyGo](https://www.howdygo.com) turns recordings of your product into interactive demos. The HowdyGo MCP server connects your HowdyGo account to AI assistants (Claude, ChatGPT, GitHub Copilot, Codex, Cursor and others) so they can find, set up, edit, publish, share and export the demos in your library.
+[HowdyGo](https://www.howdygo.com) turns recordings of your product into interactive demos. The HowdyGo MCP server connects your HowdyGo account to AI assistants (Claude, ChatGPT, GitHub Copilot, Codex, Cursor and others) so they can find, set up, edit, publish, share, export and report on the demos in your library.
 
 - **Server URL:** `https://app.howdygo.com/api/mcp`
 - **Transport:** Streamable HTTP
@@ -14,11 +14,13 @@ This repository describes the hosted server and holds its client configuration. 
 
 - **Find demos:** search your library by title, folder or what a demo shows. Step text is searched too, so "the invoicing demo" works even if the title doesn't say so.
 - **Set up a demo in one pass:** write step text from each recorded screen, auto-advance transitional clicks, add chapters, give the demo a descriptive title, and write the end-of-demo call to action and its background.
+- **Add voiceovers:** write a spoken script for each step and add AI voiceovers, in a standard voice or a premium one. Premium voices use AI credits, and your assistant tells you the cost first.
 - **Rewrite for an audience:** rewrite the whole demo, or a single step, for sales, finance or a technical audience.
 - **Edit the recorded screens:** change text on the captured pages (brand names, figures, sample data), and hide or blur sensitive elements.
 - **Manage demos:** rename, duplicate, publish or unpublish a demo, and add, change or remove its viewer password.
 - **Share:** get a demo's share link (on your custom domain if you have one) or its website embed code, inline or as a pop-up, and play published demos inline in the conversation.
 - **Export:** export a demo as a GIF, WebM or MP4 file.
+- **Analytics:** see how a guided demo performs, with its step-by-step funnel, or compare all your demos. Available on the Pro plan and up.
 - **Answer questions about HowdyGo** from its documentation.
 
 Your assistant can only reach the demos you can access, with your HowdyGo permissions. It asks before every change, and step edits save a version first, so changes can be restored from the demo's version history.
@@ -43,9 +45,11 @@ Your assistant can only reach the demos you can access, with your HowdyGo permis
 | `suggestDuplicateDemo` | Duplicate a demo |
 | `suggestPublish` | Publish or unpublish a demo |
 | `suggestPassword` | Add, change or remove a demo's viewer password |
+| `suggestVoiceover` | Add AI voiceovers to steps, with a spoken script for each |
 | `getShareLink`, `getEmbedCode` | Get the share link, or the inline or pop-up embed code |
 | `showDemo` | Play a published demo inline in the conversation |
 | `exportDemo`, `getExport` | Export a demo as a GIF, WebM or MP4 file, and get its download link |
+| `getDemoAnalytics`, `getLibraryAnalytics` | Analytics for one guided demo, with its step funnel, or for all of them (Pro plan and up) |
 | `searchDocs`, `getDocsPage` | Answer questions from the HowdyGo docs |
 
 ## Setup
@@ -125,6 +129,8 @@ Add `https://app.howdygo.com/api/mcp` as a Streamable HTTP server and sign in wi
 - "Rewrite this demo for a sales audience."
 - "On the recorded screens, replace Acme with Globex."
 - "Export this demo as a GIF and give me the download link."
+- "Add a voiceover to this demo."
+- "Where do viewers drop off in my onboarding demo?"
 - "Give me the pop-up embed code for my newest demo."
 - "Rename this demo to 'Invoicing walkthrough' and password-protect it."
 
