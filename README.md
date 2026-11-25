@@ -23,7 +23,7 @@ This repository describes the hosted server and holds its client configuration. 
 - **Analytics:** see how a guided demo performs, with its step-by-step funnel, or compare all your demos. Available on the Pro plan and up.
 - **Answer questions about HowdyGo** from its documentation.
 
-Your assistant can only read and edit the demos you can access, with your HowdyGo permissions. Other demos it can only play, and only when they're shared publicly without a password. It asks before every change, and step edits save a version first, so changes can be restored from the demo's version history.
+Your assistant works with your HowdyGo permissions: it can read and edit the demos you can access. It can also read and play other companies' demos that are shared publicly, with no password or viewer restrictions, but it can't edit or share them. It asks before every change, and step edits save a version first, so changes can be restored from the demo's version history.
 
 ## Tools
 
@@ -31,7 +31,7 @@ Your assistant can only read and edit the demos you can access, with your HowdyG
 | ---- | ------------ |
 | `getAccount` | The connected HowdyGo account and organization |
 | `searchDemos` | Find demos and sandboxes by title, folder or step text, with the step that matched |
-| `getPublication`, `batchStepContext`, `getStepWithContext`, `getAnnotation` | Read a demo: its steps, its call to action, and each step's page and clicked element |
+| `getPublication`, `batchStepContext`, `getStepWithContext`, `getAnnotation` | Read a demo, yours or one shared publicly: its steps, its call to action, and each step's page and clicked element |
 | `getStepScreenshot` | Screenshots of steps, with the click marked |
 | `getElementContext`, `getPageStructure`, `getDomContext`, `getRawNode`, `getStepDiff` | Explore the recorded pages and what changed between steps |
 | `searchPageText`, `listPageText` | Find the editable text on the recorded pages |
@@ -47,7 +47,7 @@ Your assistant can only read and edit the demos you can access, with your HowdyG
 | `suggestPassword` | Add, change or remove a demo's viewer password |
 | `suggestVoiceover` | Add AI voiceovers to steps, with a spoken script for each |
 | `getShareLink`, `getEmbedCode` | Get the share link, or the inline or pop-up embed code |
-| `showDemo` | Play a published demo inline in the conversation: one of yours, or any demo shared publicly without a password |
+| `showDemo` | Play a published demo inline in the conversation: one of yours, or any demo shared publicly |
 | `exportDemo`, `getExport` | Export a demo as a GIF, WebM or MP4 file, and get its download link |
 | `getDemoAnalytics`, `getLibraryAnalytics` | Analytics for one guided demo, with its step funnel, or for all of them (Pro plan and up) |
 | `searchDocs`, `getDocsPage` | Answer questions from the HowdyGo docs |
